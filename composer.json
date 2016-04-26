@@ -21,7 +21,8 @@
         "cweagans/composer-patches": "~1.0",
         "drupal/core": "~8.1",
         "drush/drush": "~8.0",
-        "drupal/console": "~0.10"
+        "drupal/console": "~0.10",
+        "drupal/field_collection": "8.2.*"
     },
     "require-dev": {
         "behat/mink": "~1.6",
@@ -60,6 +61,12 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/field_collection": {
+                "Issue #2688497 Operations Edit and Remove are not available in edit form": "https://www.drupal.org/files/issues/operations-edit-and-remove-are-not-available-in-edit-form-2688497-2.patch",
+                "Issue #2710375 Add new field collection item button missing in create/edit content form": "https://www.drupal.org/files/issues/add_new_field-2710375-9.patch"
+            }
         }
     }
 }
