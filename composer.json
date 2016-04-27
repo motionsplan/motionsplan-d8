@@ -25,6 +25,7 @@
         "drupal/field_collection": "8.2.*"
     },
     "require-dev": {
+        "drupal/devel": "8.*",
         "behat/mink": "~1.6",
         "behat/mink-goutte-driver": "~1.2",
         "jcalderonzumba/gastonjs": "^1.1@dev",
