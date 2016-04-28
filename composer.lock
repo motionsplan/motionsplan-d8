@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "051f579c20e57642efe1a3749aa79459",
-    "content-hash": "bbbd2ab518cea6a94e069030e6d61d0c",
+    "hash": "10a82a61e251a470399cd4eabfacb9b5",
+    "content-hash": "78f56475bc350d64eae4bee5806f7724",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -808,6 +808,45 @@
             "time": "2016-04-13 15:46:44"
         },
         {
+            "name": "drupal/config_update",
+            "version": "8.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/config_update.git",
+                "reference": "ac1526df5836a611f04bb421945beddb6306b7f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_update-8.x-1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/config": "8.*",
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/config_update_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/config": "Required by drupal/config_update_ui",
+                "drupal/core": "Required by drupal/config_update_ui"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides basic revert and update functionality for other modules",
+            "homepage": "https://www.drupal.org/project/config_update",
+            "time": "2016-03-01 16:28:35"
+        },
+        {
             "name": "drupal/console",
             "version": "0.11.3",
             "source": {
@@ -1060,6 +1099,45 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2016-04-20 01:34:34"
+        },
+        {
+            "name": "drupal/features",
+            "version": "8.3.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/features",
+                "reference": "14d66f68c13a0b93134ba15ac2ef641e6799eb1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/config": "8.*",
+                "drupal/config_update": "8.*",
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/features_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/features_ui"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-3.x": "8.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Enables administrators to package configuration into modules.",
+            "homepage": "https://www.drupal.org/project/features",
+            "time": "2016-04-07 19:57:25"
         },
         {
             "name": "drupal/field_collection",
@@ -1801,6 +1879,78 @@
                 "xml"
             ],
             "time": "2016-04-11 13:54:57"
+        },
+        {
+            "name": "motionsplan/motionsplan-pdf-library",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/motionsplan/motionsplan-pdf-library.git",
+                "reference": "9a95071e855555cce7ecd1a52dfd9ef78bf5d366"
+            },
+            "require": {
+                "tecnickcom/tcpdf": "6.2.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Motionsplan\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Motionsplan\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Olesen",
+                    "role": "lars@intraface.dk"
+                }
+            ],
+            "description": "Create PDFs of of exercises, workouts and programs",
+            "homepage": "http://github.com/motionsplan/motionsplan-pdf-library",
+            "time": "2016-04-27 18:17:41"
+        },
+        {
+            "name": "motionsplan/motionsplan_pdf",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/motionsplan/motionsplan-pdf.git",
+                "reference": "6267fe79dc87b2c0a9537490b0721b14c8ff4038"
+            },
+            "require": {
+                "motionsplan/motionsplan-pdf-library": "*"
+            },
+            "require-dev": {
+                "drupal/coder": "dev-8.x-2.x",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Olesen",
+                    "homepage": "http://larsolesen.dk",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Drupal 8 module for creating PDFs.",
+            "homepage": "https://github.com/motionsplan/motionsplan-pdf",
+            "support": {
+                "issues": "https://github.com/motionsplan/motionsplan-pdf"
+            },
+            "time": "2016-04-27 17:39:10"
         },
         {
             "name": "nikic/php-parser",
@@ -4139,6 +4289,69 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2016-03-04 07:54:35"
+        },
+        {
+            "name": "tecnickcom/tcpdf",
+            "version": "6.2.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tecnickcom/TCPDF.git",
+                "reference": "2f732eaa91b5665274689b1d40b285a7bacdc37f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/2f732eaa91b5665274689b1d40b285a7bacdc37f",
+                "reference": "2f732eaa91b5665274689b1d40b285a7bacdc37f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "fonts",
+                    "config",
+                    "include",
+                    "tcpdf.php",
+                    "tcpdf_parser.php",
+                    "tcpdf_import.php",
+                    "tcpdf_barcodes_1d.php",
+                    "tcpdf_barcodes_2d.php",
+                    "include/tcpdf_colors.php",
+                    "include/tcpdf_filters.php",
+                    "include/tcpdf_font_data.php",
+                    "include/tcpdf_fonts.php",
+                    "include/tcpdf_images.php",
+                    "include/tcpdf_static.php",
+                    "include/barcodes/datamatrix.php",
+                    "include/barcodes/pdf417.php",
+                    "include/barcodes/qrcode.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Nicola Asuni",
+                    "email": "info@tecnick.com",
+                    "homepage": "http://nicolaasuni.tecnick.com"
+                }
+            ],
+            "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
+            "homepage": "http://www.tcpdf.org/",
+            "keywords": [
+                "PDFD32000-2008",
+                "TCPDF",
+                "barcodes",
+                "datamatrix",
+                "pdf",
+                "pdf417",
+                "qrcode"
+            ],
+            "time": "2015-09-12 10:08:34"
         },
         {
             "name": "twig/twig",

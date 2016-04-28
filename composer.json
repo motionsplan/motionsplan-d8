@@ -13,6 +13,14 @@
         {
             "type": "composer",
             "url": "https://packagist.drupal-composer.org"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/motionsplan/motionsplan-pdf.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/motionsplan/motionsplan-pdf-library.git"
         }
     ],
     "require": {
@@ -22,7 +30,9 @@
         "drupal/core": "~8.1",
         "drush/drush": "~8.0",
         "drupal/console": "~0.10",
-        "drupal/field_collection": "8.2.*"
+        "drupal/field_collection": "8.2.*",
+        "drupal/features": "8.3.*",
+        "motionsplan/motionsplan_pdf": "*"
     },
     "require-dev": {
         "drupal/devel": "8.*",
