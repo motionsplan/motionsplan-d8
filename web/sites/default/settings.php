@@ -727,5 +727,5 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$settings['install_profile'] = 'standard';
+$settings['install_profile'] = 'minimal';
 $config_directories['sync'] = 'sites/default/files/config_0tnkz7pL2F7hlfDm3UkZ88nl6Ikl2Roq6q7uhbNmZyZ85mcLQ4J7MvQU_McLzNSjLLDOLv_OoA/sync';

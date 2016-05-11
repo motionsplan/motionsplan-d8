@@ -32,7 +32,14 @@
         "drupal/console": "~0.10",
         "drupal/field_collection": "8.2.*",
         "drupal/features": "8.3.*",
-        "motionsplan/motionsplan_pdf": "*"
+        "drupal/migrate_plus": "8.2.*",
+        "drupal/migrate_tools": "8.2.*",
+        "drupal/migrate_source_csv": "8.2.*",
+        "drupal/entity_browser": "8.1.*",
+        "drupal/media_entity": "8.1.*",
+        "drupal/video_embed_field": "8.1.*",
+        "motionsplan/motionsplan_pdf": "dev-8.x-1.x",
+        "dompdf/dompdf": "0.7.*"
     },
     "require-dev": {
         "drupal/devel": "8.*",
@@ -77,6 +84,9 @@
             "drupal/field_collection": {
                 "Issue #2688497 Operations Edit and Remove are not available in edit form": "https://www.drupal.org/files/issues/operations-edit-and-remove-are-not-available-in-edit-form-2688497-2.patch",
                 "Issue #2710375 Add new field collection item button missing in create/edit content form": "https://www.drupal.org/files/issues/add_new_field-2710375-9.patch"
+            },
+            "drupal/migrate_tools": {
+                "Issue #2697923 Make migration UI work with 8.1.x": "https://www.drupal.org/files/issues/2697923-add-migration-ui-4.patch"
             }
         }
     }
