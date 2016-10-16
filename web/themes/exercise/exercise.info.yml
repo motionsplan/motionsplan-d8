@@ -1,0 +1,10 @@
+name: Exercise
+type: theme
+description: This is a exercise sub theme of Classy
+core: 8.x
+# Defines the base theme
+base theme: bartik
+
+entity_print:
+  node:
+    workout: 'css/workout-pdf.css'
