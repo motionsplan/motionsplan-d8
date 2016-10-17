@@ -4,7 +4,7 @@ vagrant_memory: 3072
 # Beetbox settings.
 beet_project: drupal
 beet_domain: motionsplan-d8.local
-beet_root: "{{ beet_base }}/docroot"
+beet_root: "{{ beet_base }}/web"
 beet_site_name: motionsplan-d8.local
 
 # Drupal settings.
