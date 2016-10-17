@@ -1,0 +1,13 @@
+---
+vagrant_memory: 3072
+
+# Beetbox settings.
+beet_project: drupal
+beet_domain: motionsplan-d8.local
+beet_root: "{{ beet_base }}/docroot"
+beet_site_name: motionsplan-d8.local
+
+# Drupal settings.
+drupal_install_site: yes
+drupal_account_name: admin
+drupal_account_pass: admin
