@@ -1,0 +1,6 @@
+---
+- name: Install composer dependencies.
+  composer:
+    command: install
+    working_dir: "{{ beet_base }}"
+  become: no
