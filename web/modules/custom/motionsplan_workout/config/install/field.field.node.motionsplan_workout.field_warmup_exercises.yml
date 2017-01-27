@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_warmup_exercises
+    - node.type.motionsplan_exercise
+    - node.type.motionsplan_workout
+id: node.motionsplan_workout.field_warmup_exercises
+field_name: field_warmup_exercises
+entity_type: node
+bundle: motionsplan_workout
+label: 'Warmup exercises'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      motionsplan_exercise: motionsplan_exercise
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

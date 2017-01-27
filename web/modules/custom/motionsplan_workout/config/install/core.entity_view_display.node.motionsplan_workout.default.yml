@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.motionsplan_workout.field_exercises
+    - field.field.node.motionsplan_workout.field_introduction
+    - field.field.node.motionsplan_workout.field_warmup_exercises
+    - node.type.motionsplan_workout
+  module:
+    - user
+id: node.motionsplan_workout.default
+targetEntityType: node
+bundle: motionsplan_workout
+mode: default
+content:
+  field_exercises:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_introduction:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_warmup_exercises:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }

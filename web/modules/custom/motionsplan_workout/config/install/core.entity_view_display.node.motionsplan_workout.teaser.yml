@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.motionsplan_workout
+  module:
+    - user
+id: node.motionsplan_workout.teaser
+targetEntityType: node
+bundle: motionsplan_workout
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

@@ -1,0 +1,12 @@
+name: 'Motionsplan Workout'
+description: 'A workout has several exercises.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - menu_ui
+  - motionsplan_exercise
+  - node
+  - path
+  - user
+version: 8.x-0.1
