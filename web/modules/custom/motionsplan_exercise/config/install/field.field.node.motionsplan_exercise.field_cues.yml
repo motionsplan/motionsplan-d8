@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cues
+    - node.type.motionsplan_exercise
+id: node.motionsplan_exercise.field_cues
+field_name: field_cues
+entity_type: node
+bundle: motionsplan_exercise
+label: Cues
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

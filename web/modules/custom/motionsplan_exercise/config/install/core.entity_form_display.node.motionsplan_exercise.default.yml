@@ -1,0 +1,128 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.motionsplan_exercise.field_category
+    - field.field.node.motionsplan_exercise.field_cues
+    - field.field.node.motionsplan_exercise.field_description
+    - field.field.node.motionsplan_exercise.field_equipment
+    - field.field.node.motionsplan_exercise.field_images
+    - field.field.node.motionsplan_exercise.field_introduction
+    - field.field.node.motionsplan_exercise.field_movement
+    - field.field.node.motionsplan_exercise.field_muscle_group
+    - field.field.node.motionsplan_exercise.field_video
+    - image.style.thumbnail
+    - node.type.motionsplan_exercise
+  module:
+    - image
+    - path
+    - text
+    - video_embed_field
+id: node.motionsplan_exercise.default
+targetEntityType: node
+bundle: motionsplan_exercise
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  field_category:
+    weight: 37
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_cues:
+    weight: 40
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_description:
+    weight: 33
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_equipment:
+    weight: 36
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_images:
+    weight: 35
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_introduction:
+    weight: 41
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_movement:
+    weight: 38
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_muscle_group:
+    weight: 39
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_video:
+    weight: 34
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

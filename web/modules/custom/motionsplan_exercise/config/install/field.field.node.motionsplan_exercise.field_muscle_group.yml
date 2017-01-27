@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_muscle_group
+    - node.type.motionsplan_exercise
+    - taxonomy.vocabulary.exercise_muscle_group
+id: node.motionsplan_exercise.field_muscle_group
+field_name: field_muscle_group
+entity_type: node
+bundle: motionsplan_exercise
+label: 'Muscle group'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      exercise_muscle_group: exercise_muscle_group
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

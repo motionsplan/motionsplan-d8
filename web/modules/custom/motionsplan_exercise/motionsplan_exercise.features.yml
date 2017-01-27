@@ -1,0 +1,11 @@
+excluded:
+  - field.storage.node.field_cues
+  - field.storage.node.field_description
+  - field.storage.node.field_images
+  - field.storage.node.field_video
+  - core.entity_form_display.node.motionsplan_workout.default
+  - core.entity_view_display.node.motionsplan_workout.default
+  - core.entity_view_display.node.motionsplan_workout.teaser
+  - field.field.node.motionsplan_workout.field_exercises
+  - field.field.node.motionsplan_workout.field_warmup_exercises
+required: true

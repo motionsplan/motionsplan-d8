@@ -1,0 +1,10 @@
+name: Motionsplan Migrate CSV
+type: module
+description: Import exercises from CSV
+core: 8.x
+package: Migration
+dependencies:
+  - migrate_source_csv
+  - migrate_plus
+  - migrate_tools
+  - motionsplan_exercise

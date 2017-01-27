@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Exercise Equipment'
+vid: exercise_equipment
+description: ''
+hierarchy: 0
+weight: 0

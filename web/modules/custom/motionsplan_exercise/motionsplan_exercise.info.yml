@@ -1,0 +1,16 @@
+name: 'Motionsplan Exercise'
+description: 'Bundle with an exercise content type and corresponding vocabularies.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - file
+  - image
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user
+  - video_embed_field
+version: 8.x-0.1

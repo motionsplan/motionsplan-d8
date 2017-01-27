@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movement
+    - node.type.motionsplan_exercise
+    - taxonomy.vocabulary.exercise_movement
+id: node.motionsplan_exercise.field_movement
+field_name: field_movement
+entity_type: node
+bundle: motionsplan_exercise
+label: Movement
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      exercise_movement: exercise_movement
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

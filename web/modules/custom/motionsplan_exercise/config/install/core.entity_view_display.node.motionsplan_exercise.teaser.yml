@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.motionsplan_exercise.field_category
+    - field.field.node.motionsplan_exercise.field_description
+    - field.field.node.motionsplan_exercise.field_equipment
+    - field.field.node.motionsplan_exercise.field_images
+    - field.field.node.motionsplan_exercise.field_movement
+    - field.field.node.motionsplan_exercise.field_muscle_group
+    - field.field.node.motionsplan_exercise.field_video
+    - node.type.motionsplan_exercise
+  module:
+    - user
+id: node.motionsplan_exercise.teaser
+targetEntityType: node
+bundle: motionsplan_exercise
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_category: true
+  field_description: true
+  field_equipment: true
+  field_images: true
+  field_movement: true
+  field_muscle_group: true
+  field_video: true
